@@ -144,8 +144,6 @@ with st.sidebar:
         st.session_state["clear_expense_note"] = True
         st.rerun()
 
-    st.caption("Classifier: TF-IDF + Multinomial Naive Bayes, trained on example expense descriptions.")
-    st.caption("Your entries stay in this browser session. Download a CSV to keep a copy.")
 
 if not st.session_state.expenses:
     st.info("Your tracker is ready. Add your first expense using the form in the sidebar.")
@@ -172,7 +170,7 @@ else:
     with chart_col:
         st.subheader("Spending by category")
         category_totals = visible.groupby("Category")["Amount (₹)"].sum().sort_values(ascending=False)
-        st.bar_chart(category_totals, color="#2a7f80")
+        st.bar_chart(category_totals, color="#4b2a80")
     with top_col:
         st.subheader("Quick insight")
         if visible.empty:
