@@ -78,6 +78,11 @@ st.markdown(
       .hero h1 { margin: 0; font-size: 2.2rem; }
       .hero p { margin: .45rem 0 0; color: #dcecf0; }
       div[data-testid="stMetric"] { background: #f5f8fa; border: 1px solid #e7edf0; padding: 1rem; border-radius: 14px; }
+      .st-key-summary_metrics [data-testid="stMetric"] { background: #e8f5e9; border-color: #a5d6a7; }
+      .st-key-summary_metrics [data-testid="stMetricLabel"],
+      .st-key-summary_metrics [data-testid="stMetricLabel"] *,
+      .st-key-summary_metrics [data-testid="stMetricValue"],
+      .st-key-summary_metrics [data-testid="stMetricValue"] * { color: #166534 !important; }
     </style>
     """,
     unsafe_allow_html=True,
@@ -161,10 +166,11 @@ else:
     count = len(visible)
     average = total / count if count else 0
 
-    metric1, metric2, metric3 = st.columns(3)
-    metric1.metric("Total spent", f"₹{total:,.2f}")
-    metric2.metric("Expenses", f"{count}")
-    metric3.metric("Average per expense", f"₹{average:,.2f}")
+    with st.container(key="summary_metrics"):
+        metric1, metric2, metric3 = st.columns(3)
+        metric1.metric("Total spent", f"₹{total:,.2f}")
+        metric2.metric("Expenses", f"{count}")
+        metric3.metric("Average per expense", f"₹{average:,.2f}")
 
     chart_col, top_col = st.columns(2)
     with chart_col:
