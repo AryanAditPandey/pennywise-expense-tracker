@@ -1,6 +1,8 @@
 import pandas as pd
 import streamlit as st
 from datetime import date
+from io import BytesIO
+from pathlib import Path
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import make_pipeline
@@ -14,61 +16,22 @@ st.set_page_config(
 
 
 CATEGORIES = ["Food", "Transport", "Shopping", "Bills", "Education", "Health", "Entertainment", "Other"]
-TRAINING_EXAMPLES = {
-    "Food": [
-        "lunch at campus canteen", "burger and fries", "coffee and sandwich", "weekly grocery vegetables",
-        "pizza delivery for dinner", "breakfast at cafe", "milk bread and eggs", "restaurant dinner",
-        "snacks and juice", "takeaway noodles",
-    ],
-    "Transport": [
-        "uber cab to college", "city bus ticket", "metro card recharge", "petrol for scooter",
-        "auto rickshaw ride", "train ticket home", "parking fee", "bike taxi trip", "fuel for car",
-        "airport taxi fare",
-    ],
-    "Shopping": [
-        "new shirt and jeans", "mobile phone case", "online shopping shoes", "headphones purchase",
-        "shopping mall clothes", "new backpack", "kitchen utensils", "buying a wrist watch",
-        "sports shoes order", "sunglasses purchase",
-    ],
-    "Bills": [
-        "electricity bill payment", "monthly mobile phone bill", "wifi broadband recharge", "water bill",
-        "gas cylinder payment", "internet subscription", "phone data plan", "cable tv bill",
-        "monthly rent payment", "house maintenance charges",
-    ],
-    "Education": [
-        "python course fees", "machine learning textbook", "college tuition fee", "notebook and pens",
-        "online programming class", "exam registration fee", "laboratory manual", "coding course",
-        "school supplies", "online learning course",
-    ],
-    "Health": [
-        "doctor appointment", "pharmacy medicine", "medical checkup", "dentist visit",
-        "health insurance premium", "pain relief tablets", "clinic consultation", "blood test fee",
-        "prescription refill", "eye doctor consultation",
-    ],
-    "Entertainment": [
-        "movie tickets", "netflix subscription", "concert ticket", "video game purchase",
-        "music streaming subscription", "bowling with friends", "theme park entry", "comedy show ticket",
-        "cinema popcorn", "arcade games",
-    ],
-    "Other": [
-        "haircut at salon", "birthday gift", "donation to charity", "home repair service",
-        "pet food", "laundry service", "house cleaning", "bank charges", "photocopy service",
-        "miscellaneous payment",
-    ],
-}
+TRAINING_DATA_PATH = Path(__file__).with_name("expense_training_data.csv")
 
 
 @st.cache_resource
-def train_category_model():
-    descriptions, labels = [], []
-    for category, examples in TRAINING_EXAMPLES.items():
-        descriptions.extend(examples)
-        labels.extend([category] * len(examples))
-    model = make_pipeline(TfidfVectorizer(ngram_range=(1, 2)), MultinomialNB())
-    return model.fit(descriptions, labels)
+def train_category_model(training_csv: bytes):
+    examples = pd.read_csv(BytesIO(training_csv))
+    model = make_pipeline(
+        TfidfVectorizer(ngram_range=(1, 3), strip_accents="unicode", sublinear_tf=True),
+        MultinomialNB(),
+    )
+    return model.fit(examples["description"].astype(str), examples["category"].astype(str))
 
 
-category_model = train_category_model()
+training_data = TRAINING_DATA_PATH.read_bytes()
+training_examples = pd.read_csv(BytesIO(training_data))
+category_model = train_category_model(training_data)
 
 st.markdown(
     """
@@ -122,6 +85,11 @@ with st.sidebar:
         suggested_category = "Other"
         confidence = 0.0
         st.caption("Enter a description to get an ML category suggestion.")
+
+    st.caption(
+        f"The classifier learns from {len(training_examples)} labeled descriptions "
+        f"across {training_examples['category'].nunique()} categories."
+    )
 
     category_mode = st.radio(
         "Choose category",

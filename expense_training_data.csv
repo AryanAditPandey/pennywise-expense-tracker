@@ -1,0 +1,321 @@
+description,category
+lunch at campus canteen,Food
+burger and fries,Food
+coffee and sandwich,Food
+weekly grocery vegetables,Food
+pizza delivery for dinner,Food
+breakfast at cafe,Food
+milk bread and eggs,Food
+restaurant dinner,Food
+snacks and juice,Food
+takeaway noodles,Food
+chicken biryani lunch,Food
+vegetable curry with rice,Food
+fresh fruit grocery shopping,Food
+cafeteria meal,Food
+street food chaat,Food
+bakery cake,Food
+fresh vegetables at market,Food
+food delivery order,Food
+tea and samosa,Food
+sushi dinner,Food
+bottled water and snacks,Food
+ice cream dessert,Food
+cooking ingredients for dinner,Food
+lunch combo meal,Food
+cafe latte,Food
+groceries for household meals,Food
+burger takeaway order,Food
+pasta meal with sauce,Food
+rice and lentils groceries,Food
+food court lunch,Food
+breakfast sandwich,Food
+cereal and milk breakfast,Food
+restaurant bill for dinner,Food
+fruits and vegetables,Food
+chocolate and sweets,Food
+paneer takeaway,Food
+vending machine snacks,Food
+meal at university cafeteria,Food
+dinner delivery app order,Food
+eggs and dairy groceries,Food
+uber ride to college,Transport
+city bus ticket,Transport
+metro card recharge,Transport
+petrol for scooter,Transport
+auto rickshaw fare,Transport
+train ticket home,Transport
+parking fee downtown,Transport
+bike taxi ride,Transport
+fuel for car,Transport
+airport taxi fare,Transport
+monthly bus pass,Transport
+metro train fare,Transport
+highway toll payment,Transport
+vehicle fuel refill,Transport
+car parking garage,Transport
+taxi ride to airport,Transport
+cab fare downtown,Transport
+railway ticket purchase,Transport
+bus fare to campus,Transport
+subway ride to work,Transport
+scooter charging fee,Transport
+bicycle rental fee,Transport
+rideshare trip,Transport
+bus pass renewal,Transport
+public transit ticket,Transport
+commuter train pass,Transport
+ferry ticket purchase,Transport
+intercity coach ticket,Transport
+car rental for travel,Transport
+oil change for car,Transport
+taxi trip to station,Transport
+airport shuttle ride,Transport
+local train fare,Transport
+fuel station refill,Transport
+electric vehicle charging,Transport
+expressway toll charge,Transport
+parking meter payment,Transport
+motorcycle fuel refill,Transport
+transit pass recharge,Transport
+shuttle bus ride,Transport
+new shirt and jeans,Shopping
+mobile phone case,Shopping
+online shopping shoes,Shopping
+headphones purchase,Shopping
+clothes from shopping mall,Shopping
+new backpack,Shopping
+kitchen utensils purchase,Shopping
+wristwatch purchase,Shopping
+sports shoes order,Shopping
+sunglasses purchase,Shopping
+winter jacket purchase,Shopping
+smartphone purchase,Shopping
+laptop sleeve purchase,Shopping
+home decor shopping,Shopping
+cotton t shirt purchase,Shopping
+jeans purchase,Shopping
+handbag purchase,Shopping
+wallet purchase,Shopping
+bedsheet purchase,Shopping
+kitchen blender purchase,Shopping
+wireless headphones purchase,Shopping
+computer mouse purchase,Shopping
+keyboard purchase,Shopping
+gaming controller purchase,Shopping
+online shopping order,Shopping
+cosmetics and makeup purchase,Shopping
+perfume purchase,Shopping
+watch strap purchase,Shopping
+sneakers purchase,Shopping
+furniture purchase,Shopping
+phone charger purchase,Shopping
+tablet purchase,Shopping
+toy store purchase,Shopping
+jewelry purchase,Shopping
+travel suitcase purchase,Shopping
+office chair purchase,Shopping
+reusable water bottle purchase,Shopping
+eyeglasses frame purchase,Shopping
+curtain purchase,Shopping
+home appliance purchase,Shopping
+electricity bill payment,Bills
+monthly mobile phone bill,Bills
+wifi broadband recharge,Bills
+water utility bill,Bills
+gas cylinder payment,Bills
+internet subscription bill,Bills
+phone data plan payment,Bills
+cable tv bill payment,Bills
+monthly rent payment,Bills
+house maintenance charges,Bills
+credit card,Bills
+credit card bill,Bills
+credit card payment,Bills
+pay credit card bill,Bills
+monthly credit card statement,Bills
+credit card balance payment,Bills
+credit card annual fee,Bills
+credit card late fee,Bills
+credit card charges payment,Bills
+card statement payment,Bills
+mobile phone recharge plan,Bills
+electricity utility charges,Bills
+monthly water charges,Bills
+home internet bill,Bills
+apartment maintenance fee,Bills
+monthly rent transfer,Bills
+gas utility bill payment,Bills
+phone bill payment,Bills
+household utility bill,Bills
+broadband plan payment,Bills
+property tax payment,Bills
+home insurance premium,Bills
+sewer utility bill,Bills
+municipal water bill payment,Bills
+prepaid phone recharge,Bills
+credit card due amount,Bills
+credit card minimum payment,Bills
+recurring utility payment,Bills
+monthly loan installment,Bills
+home gas bill,Bills
+python course fees,Education
+machine learning textbook,Education
+college tuition fee,Education
+notebook and pens,Education
+online programming class,Education
+exam registration fee,Education
+laboratory manual,Education
+coding course,Education
+school supplies,Education
+online learning course,Education
+university semester fee,Education
+lecture notes printing,Education
+educational app subscription,Education
+online course certificate,Education
+math workbook,Education
+study guide purchase,Education
+academic journal access,Education
+class tuition payment,Education
+test preparation course,Education
+computer science book,Education
+data science course fee,Education
+programming bootcamp,Education
+college laboratory fee,Education
+student registration charge,Education
+library membership fee,Education
+exam retake fee,Education
+tutoring session,Education
+language learning course,Education
+educational workshop ticket,Education
+lecture recording access,Education
+reference books purchase,Education
+calculator for class,Education
+stationery for assignments,Education
+academic conference registration,Education
+online tutorial subscription,Education
+campus library fine,Education
+course materials fee,Education
+student printing credit,Education
+textbook rental,Education
+school tuition payment,Education
+doctor appointment,Health
+pharmacy medicine,Health
+medical checkup,Health
+dentist visit,Health
+health insurance premium,Health
+pain relief tablets,Health
+clinic consultation,Health
+blood test fee,Health
+prescription refill,Health
+eye doctor consultation,Health
+hospital visit,Health
+vitamins and supplements,Health
+dental cleaning,Health
+vaccination charge,Health
+health clinic visit,Health
+physiotherapy session,Health
+allergy medicine,Health
+medical supplies purchase,Health
+eye exam appointment,Health
+contact lenses,Health
+ambulance service fee,Health
+laboratory test appointment,Health
+surgery consultation,Health
+therapy session,Health
+mental health counseling,Health
+medical insurance payment,Health
+bandage and first aid supplies,Health
+pediatrician appointment,Health
+dermatologist visit,Health
+x ray imaging fee,Health
+prescription glasses,Health
+flu shot appointment,Health
+blood pressure monitor,Health
+emergency room bill,Health
+prenatal checkup,Health
+home health test kit,Health
+orthopedic visit,Health
+dental filling,Health
+medical specialist consultation,Health
+health screening package,Health
+movie tickets,Entertainment
+netflix subscription,Entertainment
+concert ticket,Entertainment
+video game purchase,Entertainment
+music streaming subscription,Entertainment
+bowling with friends,Entertainment
+theme park entry,Entertainment
+comedy show ticket,Entertainment
+cinema popcorn,Entertainment
+arcade games,Entertainment
+theatre performance ticket,Entertainment
+amusement park rides,Entertainment
+karaoke night,Entertainment
+museum ticket,Entertainment
+comedy club tickets,Entertainment
+live music show,Entertainment
+football game ticket,Entertainment
+sports event entry,Entertainment
+online gaming subscription,Entertainment
+arcade game tokens,Entertainment
+movie rental,Entertainment
+escape room booking,Entertainment
+mini golf game,Entertainment
+zoo ticket,Entertainment
+music festival pass,Entertainment
+puzzle game app,Entertainment
+monthly music subscription,Entertainment
+cinema snack,Entertainment
+art exhibition ticket,Entertainment
+roller skating rink,Entertainment
+local theater ticket,Entertainment
+theme park tickets,Entertainment
+trivia night entry,Entertainment
+bowling alley game,Entertainment
+karaoke room booking,Entertainment
+sports match ticket,Entertainment
+digital game download,Entertainment
+comedy show entry,Entertainment
+live band performance,Entertainment
+amusement park ticket,Entertainment
+haircut at salon,Other
+birthday gift,Other
+donation to charity,Other
+home repair service,Other
+pet food,Other
+laundry service,Other
+house cleaning,Other
+bank charges,Other
+photocopy service,Other
+miscellaneous payment,Other
+gift wrapping service,Other
+flowers bouquet,Other
+dry cleaning service,Other
+shoe repair service,Other
+passport photo service,Other
+event hall rental,Other
+locksmith visit,Other
+moving service,Other
+handyman visit,Other
+wedding gift purchase,Other
+charity donation payment,Other
+pet grooming service,Other
+postage stamps purchase,Other
+package delivery fee,Other
+watch battery replacement,Other
+tailoring service,Other
+carpenter repair visit,Other
+plumber service call,Other
+house painting service,Other
+key duplication service,Other
+community club fee,Other
+legal document notarization,Other
+personal storage rental,Other
+funeral service donation,Other
+religious offering,Other
+event photography service,Other
+appliance repair service,Other
+garden maintenance service,Other
+water delivery service,Other
+general service fee,Other

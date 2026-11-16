@@ -11,4 +11,4 @@ streamlit run app.py
 
 Use the sidebar to enter an expense description. A TF-IDF + Multinomial Naive Bayes model suggests a category; you can use that suggestion or choose a category manually. The dashboard updates with monthly totals, a category chart, and an expense history table. Entries are kept in Streamlit's session state, so download the CSV if you want to save them beyond the current browser session.
 
-The model is trained locally at app startup on the small example-description set in `app.py`; it does not call an external AI service.
+The model is trained locally from `expense_training_data.csv`, a curated dataset with 320 example descriptions (40 per category). It does not call an external AI service. TF-IDF extracts one-, two-, and three-word features, and Multinomial Naive Bayes predicts the category. The examples are hand-built for this demo, so predictions can still be wrong for descriptions the dataset does not cover.
